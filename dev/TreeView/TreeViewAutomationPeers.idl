@@ -1,4 +1,4 @@
-[WUXC_VERSION_RS4]
+﻿[WUXC_VERSION_RS4]
 [webhosthidden]
 [WUXC_INTERFACE_NAME("ITreeViewListAutomationPeer", 71c1b5bc-bb29-4479-a8a8-606be6b823ae)]
 [WUXC_CONSTRUCTOR_NAME("ITreeViewListAutomationPeerFactory", 00f597e2-f811-475a-bfe6-290fe707fa88)]

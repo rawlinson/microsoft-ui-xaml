@@ -34,7 +34,8 @@ namespace RuntimeProfiler
         ProfId_RadioButtons,
         ProfId_RadioMenuFlyoutItem,
         ProfId_ItemsRepeater,
-        ProfId_Size
+        ProfId_AnimatedVisualPlayer,
+        ProfId_Size, // ProfId_Size is the last always.
     } ProfilerClassId;
 
     //  Ditto above...
