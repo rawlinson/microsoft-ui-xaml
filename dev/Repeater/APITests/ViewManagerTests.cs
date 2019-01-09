@@ -142,6 +142,7 @@ namespace Windows.UI.Xaml.Tests.MUXControls.ApiTests.RepeaterTests
                 {
                     var ctx = (VirtualizingLayoutContext)innerRepeaters[0].Tag;
                     ctx.RecycleElement(itemElements[0][0]);
+                    Log.Comment("Verify 0.0 is pinned");
                     Verify.AreEqual(0, innerRepeaters[0].GetElementIndex(itemElements[0][0]));
                 }
 
@@ -150,6 +151,7 @@ namespace Windows.UI.Xaml.Tests.MUXControls.ApiTests.RepeaterTests
                 {
                     var ctx = (VirtualizingLayoutContext)innerRepeaters[0].Tag;
                     ctx.RecycleElement(itemElements[0][1]);
+                    Log.Comment("Verify 0.1 is recycled");
                     Verify.AreEqual(-1, innerRepeaters[0].GetElementIndex(itemElements[0][1]));
                 }
 
@@ -158,6 +160,7 @@ namespace Windows.UI.Xaml.Tests.MUXControls.ApiTests.RepeaterTests
                 {
                     var ctx = (VirtualizingLayoutContext)rootRepeater.Tag;
                     ctx.RecycleElement(groupElements[0]);
+                    Log.Comment("Verify group 0 is pinned");
                     Verify.AreEqual(0, rootRepeater.GetElementIndex(groupElements[0]));
                 }
 
@@ -176,8 +179,11 @@ namespace Windows.UI.Xaml.Tests.MUXControls.ApiTests.RepeaterTests
                     ((VirtualizingLayoutContext)rootRepeater.Tag).RecycleElement(groupElements[0]);
                     ((VirtualizingLayoutContext)innerRepeaters[0].Tag).RecycleElement(itemElements[0][0]);
 
+                    Log.Comment("Verify 0 is recycled");
                     Verify.AreEqual(-1, rootRepeater.GetElementIndex(groupElements[0]));
+                    Log.Comment("Verify 0.0 is recycled");
                     Verify.AreEqual(-1, innerRepeaters[0].GetElementIndex(itemElements[0][0]));
+                    Log.Comment("Verify group 1.1 is pinned");
                     Verify.AreEqual(1, innerRepeaters[0].GetElementIndex(itemElements[1][1]));
                 }
 
@@ -187,6 +193,7 @@ namespace Windows.UI.Xaml.Tests.MUXControls.ApiTests.RepeaterTests
                     data[1].RemoveAt(1);
                     rootRepeater.UpdateLayout();
 
+                    Log.Comment("Verify 1.1 is recycled");
                     Verify.AreEqual(-1, innerRepeaters[1].GetElementIndex(itemElements[1][1]));
                 }
             });

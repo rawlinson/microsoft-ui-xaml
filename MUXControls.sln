@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{67599AD5-51EC-44CB-85CE-B60CD8CBA270}"
 EndProject
@@ -1066,6 +1066,8 @@ Global
 		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug_test|x64.Build.0 = Debug_test|x64
 		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug_test|x64.Deploy.0 = Debug_test|x64
 		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug_test|x86.ActiveCfg = Debug_test|x86
+		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug_test|x86.Build.0 = Debug_test|x86
+		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug_test|x86.Deploy.0 = Debug_test|x86
 		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug|ARM.ActiveCfg = Debug|ARM
 		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug|ARM.Build.0 = Debug|ARM
 		{DEDC1E4F-CFA5-4443-83EB-E79D425DF7E7}.Debug|ARM.Deploy.0 = Debug|ARM
