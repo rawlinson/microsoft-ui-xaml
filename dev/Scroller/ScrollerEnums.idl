@@ -8,6 +8,8 @@ enum InteractionState
     Animation = 3,
 };
 
+#ifndef BUILD_WINDOWS
+
 [WUXC_VERSION_PREVIEW]
 [webhosthidden]
 enum ScrollMode
@@ -26,6 +28,8 @@ enum ZoomMode
     Enabled = 0,
     Disabled = 1,
 };
+
+#endif
 
 [WUXC_VERSION_PREVIEW]
 [webhosthidden]

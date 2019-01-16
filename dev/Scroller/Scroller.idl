@@ -4,13 +4,18 @@
 [threading(both)]
 runtimeclass ScrollerChangeOffsetsOptions
 {
-    ScrollerChangeOffsetsOptions(Double horizontalOffset, Double verticalOffset, ScrollerViewKind offsetsKind, ScrollerViewChangeKind viewChangeKind, ScrollerViewChangeSnapPointRespect snapPointRespect);
+    ScrollerChangeOffsetsOptions(
+        Double horizontalOffset,
+        Double verticalOffset,
+        MU_SE_NAMESPACE.ScrollerViewKind offsetsKind,
+        MU_SE_NAMESPACE.ScrollerViewChangeKind viewChangeKind,
+        MU_SE_NAMESPACE.ScrollerViewChangeSnapPointRespect snapPointRespect);
 
     Double HorizontalOffset { get; set; };
     Double VerticalOffset { get; set; };
-    ScrollerViewKind OffsetsKind { get; set; };
-    ScrollerViewChangeKind ViewChangeKind { get; set; };
-    ScrollerViewChangeSnapPointRespect SnapPointRespect{ get; set; };
+    MU_SE_NAMESPACE.ScrollerViewKind OffsetsKind { get; set; };
+    MU_SE_NAMESPACE.ScrollerViewChangeKind ViewChangeKind { get; set; };
+    MU_SE_NAMESPACE.ScrollerViewChangeSnapPointRespect SnapPointRespect{ get; set; };
 }
 
 [WUXC_VERSION_PREVIEW]
@@ -27,13 +32,18 @@ runtimeclass ScrollerChangeOffsetsWithAdditionalVelocityOptions
 [webhosthidden]
 runtimeclass ScrollerChangeZoomFactorOptions
 {
-    ScrollerChangeZoomFactorOptions(Single zoomFactor, ScrollerViewKind zoomFactorKind, Windows.Foundation.Numerics.Vector2 centerPoint, ScrollerViewChangeKind viewChangeKind, ScrollerViewChangeSnapPointRespect snapPointRespect);
+    ScrollerChangeZoomFactorOptions(
+        Single zoomFactor,
+        MU_SE_NAMESPACE.ScrollerViewKind zoomFactorKind,
+        Windows.Foundation.Numerics.Vector2 centerPoint,
+        MU_SE_NAMESPACE.ScrollerViewChangeKind viewChangeKind,
+        MU_SE_NAMESPACE.ScrollerViewChangeSnapPointRespect snapPointRespect);
 
     Single ZoomFactor { get; set; };
-    ScrollerViewKind ZoomFactorKind { get; set; };
+    MU_SE_NAMESPACE.ScrollerViewKind ZoomFactorKind { get; set; };
     Windows.Foundation.Numerics.Vector2 CenterPoint { get; set; };
-    ScrollerViewChangeKind ViewChangeKind { get; set; };
-    ScrollerViewChangeSnapPointRespect SnapPointRespect{ get; set; };
+    MU_SE_NAMESPACE.ScrollerViewChangeKind ViewChangeKind { get; set; };
+    MU_SE_NAMESPACE.ScrollerViewChangeSnapPointRespect SnapPointRespect{ get; set; };
 }
 
 [WUXC_VERSION_PREVIEW]
@@ -73,7 +83,7 @@ runtimeclass ScrollerChangingZoomFactorEventArgs
 runtimeclass ScrollerViewChangeCompletedEventArgs
 {
     Int32 ViewChangeId { get; };
-    ScrollerViewChangeResult Result { get; };
+    MU_SE_NAMESPACE.ScrollerViewChangeResult Result { get; };
 }
 
 [WUXC_VERSION_PREVIEW]

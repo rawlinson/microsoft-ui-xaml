@@ -11,7 +11,8 @@
 #define USE_INSIDER_SDK
 
 #define MU_XC_NAMESPACE Windows.UI.Xaml.Controls
-#define MU_SE_NAMESPACE Windows.UI.Xaml.Controls.Primitives
+#define MU_SE_NAMESPACE Windows.UI.Xaml.Controls
+//#define MU_SE_NAMESPACE Windows.UI.Xaml.Controls.Primitives
 #define MU_XCP_NAMESPACE Windows.UI.Xaml.Controls.Primitives
 #define MU_XM_NAMESPACE Windows.UI.Xaml.Media
 #define MU_XAP_NAMESPACE Windows.UI.Xaml.Automation.Peers
