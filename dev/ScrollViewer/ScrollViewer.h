@@ -56,7 +56,7 @@ public:
 
     double ExtentHeight();
 
-    winrt::ScrollerState State();
+    winrt::InteractionState State();
 
     winrt::InputKind InputKind();
     void InputKind(winrt::InputKind const& value);
