@@ -151,7 +151,7 @@ namespace Windows.UI.Xaml.Tests.MUXControls.ApiTests
                 scroller.VerticalScrollChainingMode = ChainingMode.Never;
                 scroller.HorizontalScrollRailingMode = RailingMode.Disabled;
                 scroller.VerticalScrollRailingMode = RailingMode.Disabled;
-                scroller.HorizontalScrollMode = ScrollMode.Enabled;
+                scroller.HorizontalScrollMode = ScrollMode.Disabled;
                 scroller.VerticalScrollMode = ScrollMode.Disabled;
                 scroller.ZoomChainingMode = ChainingMode.Never;
                 scroller.ZoomMode = ZoomMode.Enabled;
@@ -177,7 +177,7 @@ namespace Windows.UI.Xaml.Tests.MUXControls.ApiTests
                 Verify.AreEqual(scroller.VerticalScrollChainingMode, ChainingMode.Never);
                 Verify.AreEqual(scroller.HorizontalScrollRailingMode, RailingMode.Disabled);
                 Verify.AreEqual(scroller.VerticalScrollRailingMode, RailingMode.Disabled);
-                Verify.AreEqual(scroller.HorizontalScrollMode, ScrollMode.Enabled);
+                Verify.AreEqual(scroller.HorizontalScrollMode, ScrollMode.Disabled);
                 Verify.AreEqual(scroller.VerticalScrollMode, ScrollMode.Disabled);
                 Verify.AreEqual(scroller.ZoomChainingMode, ChainingMode.Never);
                 Verify.AreEqual(scroller.ZoomMode, ZoomMode.Enabled);
